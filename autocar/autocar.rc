@@ -1,0 +1,312 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\autocar.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\autocar.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 autocar"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "autocar，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_AUTOCAR_DIALOG DIALOGEX 0, 0, 419, 390
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "autocar"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,299,369,50,14
+    PUSHBUTTON      "取消",IDCANCEL,356,369,50,14
+    CONTROL         "",IDC_ShowImage,"Static",SS_BLACKFRAME,7,54,137,88
+    EDITTEXT        IDC_EDITHEAD,329,14,83,14,ES_AUTOHSCROLL
+    LTEXT           "头部",IDC_STATIC,306,18,15,8
+    EDITTEXT        IDC_EDITLEFTHAND,326,32,31,14,ES_AUTOHSCROLL
+    LTEXT           "左手",IDC_STATIC,306,36,15,8
+    EDITTEXT        IDC_EDITRIGHTHAND,375,33,30,14,ES_AUTOHSCROLL
+    LTEXT           "右手",IDC_STATIC,360,35,15,8
+    EDITTEXT        IDC_EDITEDGE,335,51,27,14,ES_AUTOHSCROLL
+    LTEXT           "磁偏角",IDC_STATIC,306,53,22,8
+    EDITTEXT        IDC_EDITPAPO,346,87,62,14,ES_AUTOHSCROLL
+    LTEXT           "坡度：",IDC_STATIC,306,90,22,8
+    EDITTEXT        IDC_EDITCOLOR,346,122,62,14,ES_AUTOHSCROLL
+    LTEXT           "色彩1：",IDC_STATIC,306,125,26,8
+    EDITTEXT        IDC_EDITLEFTCLOCK,346,158,31,14,ES_AUTOHSCROLL
+    LTEXT           "左计数：",IDC_STATIC,306,161,28,8
+    EDITTEXT        IDC_EDITRIGHTCLOCK,346,177,31,14,ES_AUTOHSCROLL
+    LTEXT           "右计数：",IDC_STATIC,306,179,28,8
+    EDITTEXT        IDC_EDITLEFTPWM,347,241,62,14,ES_AUTOHSCROLL
+    LTEXT           "左PWM：",IDC_STATIC,306,244,31,8
+    EDITTEXT        IDC_EDITRIGHTPWM,347,260,62,14,ES_AUTOHSCROLL
+    LTEXT           "右PWM：",IDC_STATIC,306,263,31,8
+    PUSHBUTTON      "加速",IDC_BTSPEEDUP,330,312,50,14
+    PUSHBUTTON      "减速",IDC_BTSPEEDDOWN,330,348,50,14
+    PUSHBUTTON      "左转固定角度",IDC_BTLEFT,303,329,50,14
+    PUSHBUTTON      "右转固定角度",IDC_BTRIGHT,359,329,50,14
+    CONTROL         "",IDC_ShowImage1,"Static",SS_BLACKFRAME,154,54,137,88
+    CONTROL         "",IDC_ShowImage3,"Static",SS_BLACKFRAME,7,149,137,88
+    CONTROL         "",IDC_ShowImage5,"Static",SS_BLACKFRAME,155,149,137,88
+    PUSHBUTTON      "自动驾驶",IDC_BTAUTODRIVE,109,270,50,36
+    PUSHBUTTON      "停止",IDC_BTSTOPDRIVE,109,310,49,19
+    EDITTEXT        IDC_EDITLIMITPWM2,347,279,62,14,ES_AUTOHSCROLL
+    LTEXT           "速度PWM",IDC_STATIC,306,282,31,8
+    PUSHBUTTON      "打开串口",IDC_BTOPEN,7,5,50,14
+    PUSHBUTTON      "关闭串口",IDC_BTCLOSE,7,22,50,14
+    EDITTEXT        IDC_EDITSEND,84,13,208,14,ES_AUTOHSCROLL
+    LTEXT           "发送：",IDC_STATIC,61,15,22,8
+    EDITTEXT        IDC_EDITREV,84,29,207,14,ES_AUTOHSCROLL
+    LTEXT           "接收：",IDC_STATIC,61,32,22,8
+    PUSHBUTTON      "发送",IDC_BTSEND,7,38,50,14
+    EDITTEXT        IDC_EDITCOLOR2,346,139,62,14,ES_AUTOHSCROLL
+    LTEXT           "色彩2：",IDC_STATIC,306,143,26,8
+    EDITTEXT        IDC_EDITCEQING,346,103,62,14,ES_AUTOHSCROLL
+    LTEXT           "侧倾度：",IDC_STATIC,306,107,28,8
+    EDITTEXT        IDC_EDITGYRO,336,68,24,14,ES_AUTOHSCROLL
+    LTEXT           "转弯控制",IDC_STATIC,306,71,28,8
+    EDITTEXT        IDC_EDITLEFTCLOCKADD,378,158,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITRIGHTCLOCKADD,378,177,31,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "清空计数",IDC_BTCLEARCLOCK,330,297,50,14
+    EDITTEXT        IDC_EDITGYRODEGREE,388,50,24,14,ES_AUTOHSCROLL
+    LTEXT           "转角度",IDC_STATIC,363,53,22,8
+    PUSHBUTTON      "打开摄像头",IDC_BTOPENVIDEO,238,269,50,14
+    PUSHBUTTON      "关闭摄像头",IDC_BTCLOSEVIDEO,238,285,50,14
+    PUSHBUTTON      "GO",IDC_BTAUTO12,110,333,30,14
+    PUSHBUTTON      "T_Lf",IDC_BTAUTO23,145,333,30,14
+    PUSHBUTTON      "T_Rt",IDC_BTAUTO34,183,333,30,14
+    PUSHBUTTON      "T_Bk",IDC_BTAUTO35,220,333,30,14
+    PUSHBUTTON      "T_30",IDC_BTAUTO36,256,333,30,14
+    PUSHBUTTON      "Head_U",IDC_BTAUTO57,183,351,30,14
+    PUSHBUTTON      "P0D0",IDC_BTAUTO58,219,351,30,14
+    PUSHBUTTON      "P0D2",IDC_BTAUTO67,257,351,30,14
+    PUSHBUTTON      "P1D0",IDC_BTAUTO68,109,369,30,14
+    EDITTEXT        IDC_EDITCENTERX,47,261,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCENTERY,47,280,45,14,ES_AUTOHSCROLL
+    GROUPBOX        "位置方向",IDC_STATIC,7,253,95,115
+    EDITTEXT        IDC_EDITLINEDEGREE,7,350,102,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITLINEBOTTON,47,318,45,14,ES_AUTOHSCROLL
+    LTEXT           "底部位置",IDC_STATIC,12,319,29,8
+    LTEXT           "红色平均值",IDC_STATIC,12,337,35,8
+    PUSHBUTTON      "识别数字",IDC_BTSCANNUMBER,238,301,50,14
+    EDITTEXT        IDC_EDITSCANNUMBER,258,318,28,14,ES_AUTOHSCROLL
+    LTEXT           "数字：",IDC_STATIC,235,319,22,8
+    EDITTEXT        IDC_EDITLOCATION,196,270,31,14,ES_AUTOHSCROLL
+    LTEXT           "当前位置",IDC_STATIC,165,273,28,8
+    EDITTEXT        IDC_EDITNEXTLOCATION,196,287,31,14,ES_AUTOHSCROLL
+    LTEXT           "下一位置",IDC_STATIC,165,290,28,8
+    EDITTEXT        IDC_EDITGOLDLOCATION,50,240,166,14,ES_AUTOHSCROLL
+    LTEXT           "宝藏位置",IDC_STATIC,222,239,28,8
+    PUSHBUTTON      "81",IDC_BTAUTO81,183,369,30,14
+    PUSHBUTTON      "P0D4",IDC_BTAUTO71,146,369,30,14
+    EDITTEXT        IDC_EDITLINENUMBER,47,299,45,14,ES_AUTOHSCROLL
+    LTEXT           "十字距离",IDC_STATIC,12,301,29,8
+    LTEXT           "终点X",IDC_STATIC,12,265,18,8
+    LTEXT           "终点Y",IDC_STATIC,12,283,18,8
+    PUSHBUTTON      "T__30",IDC_BTAUTO45,111,351,30,14
+    PUSHBUTTON      "Hand_U",IDC_BTAUTO46,146,351,30,14
+    GROUPBOX        "状态",IDC_STATIC,292,5,120,362
+    EDITTEXT        IDC_EDIT_P,314,193,27,14,ES_AUTOHSCROLL
+    LTEXT           "P:",IDC_STATIC,298,195,8,8
+    LTEXT           "I:",IDC_STATIC,298,209,8,8
+    EDITTEXT        IDC_EDIT_I,313,210,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_D,314,226,26,14,ES_AUTOHSCROLL
+    LTEXT           "D:",IDC_STATIC,297,225,8,8
+    LTEXT           "Down:",IDC_STATIC,345,214,22,8
+    LTEXT           "Up:",IDC_STATIC,347,198,15,8
+    EDITTEXT        IDC_EDIT_Down,367,212,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UP,366,194,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMODE,254,251,31,14,ES_AUTOHSCROLL
+    LTEXT           "模式",IDC_STATIC,222,254,15,8
+    LTEXT           "1左转2右转3掉头",IDC_STATIC,363,71,54,8
+    EDITTEXT        IDC_EDITMODEEVERY,55,369,45,14,ES_AUTOHSCROLL
+    LTEXT           "模式",IDC_STATIC,20,371,15,8
+    PUSHBUTTON      "P12",IDC_Patern12,219,369,50,14
+    LTEXT           "Debug2018",IDC_STATIC,246,59,38,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "autocar.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "autocar.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_AUTOCAR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 383
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 autocar(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\autocar.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
